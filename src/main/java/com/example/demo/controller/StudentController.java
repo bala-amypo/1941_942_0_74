@@ -1,7 +1,8 @@
 package com.example.demo.contrroller;
 import com.example.demo.entity.Stuentity;
 import com.example.demo.service.StudentService;
-import 
+import org.springframework.web.bind.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
