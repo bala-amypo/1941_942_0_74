@@ -6,11 +6,12 @@ import com.example.demo.repository.StudentRepository;
 
 @Service
 public class StudentServiceImple implements StudentService{
-    private final StudentRepository studentRepository;
-    public StudentServiceImple(StudentRepository studentRepository){
-        this.studentRepository=studentRepository;
-    }
+    // private final StudentRepository studentRepository;
+    // public StudentServiceImple(StudentRepository studentRepository){
+    //     this.studentRepository=studentRepository;
+    // }
+    @Autowired
     public Stuentity saveStudent(Stuentity student){
-        return 
+        return studentRepository.save(student);
     }
 }
