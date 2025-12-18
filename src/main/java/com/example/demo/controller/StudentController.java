@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class StudentController {
     @Autowired
     StudentService studentService;
-    @postMapping("/postdata")
+    @PostMapping("/postdata")
     public Stuentity postdata(@RequestBody Stuentity student){
         return studentService.saveStudent(student);
     }
